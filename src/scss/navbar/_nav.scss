@@ -1,0 +1,103 @@
+.logo {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+#nav {
+  width: 100%;
+  height: 100%;
+  background-color: $secondaryOpacity;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  padding-top: 150px;
+  transition: all .3s ease-in-out;
+  transform: scale(0);
+  border-radius: 50%;
+  a {
+    display: block;
+    color: $primaryColor;
+    font: 600 1.5rem $primaryFont;
+    letter-spacing: 2px;
+    &:not(a:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  .router-link-exact-active {
+    width: fit-content;
+    border-radius: 2px;
+    margin: auto;
+    padding: 8px;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+  }
+  .person {
+    .user-name {
+      color: $primaryColor;
+      opacity: .8;
+      font-family: $primaryFont;
+    }
+    .avatar {
+      display: block;
+      margin: auto;
+      font-size: 1.2rem;
+      color: $primaryColor;
+    }
+  }
+}
+.activeNav {
+  transform: scale(1) !important;
+  border-radius: 0 !important;
+}
+.nav__toggle {
+  position: fixed;
+  top: 30px;
+  right: 10px;
+  transition: all .2s linear;
+  z-index: 9999;
+    span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    transition: all .2s linear;
+    background-color: $primaryColor;
+    &:not(span:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.forward1 {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+.back1 {
+  transform: rotate(0);
+  transform-origin: 0;
+}
+
+.forward2 {
+  transform: translate(-10px);
+  opacity: 0;
+}
+.back2 {
+  transform: translate(0);
+  opacity: 1;
+}
+.forward3 {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+.back3 {
+  transform: rotate(0);
+  transform-origin: 0;
+}
+.flip {
+  transform: rotateX(180deg);
+}
+.flipReverse {
+  transform: rotateX(0);
+}

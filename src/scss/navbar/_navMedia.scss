@@ -1,0 +1,26 @@
+@media only screen and (min-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 80px;
+        filter: brightness(1);
+    }
+    #nav {
+        transform: scale(1);
+        border-radius: 0;
+        position: absolute;
+        padding-top: 20px;
+        height: auto;
+        box-shadow: 0 3px 6px $secondaryOpacity;
+        a, .person {
+            display: inline-block;
+        }
+        a {
+            font-size: 1rem;
+            margin-right: 20px !important;
+        }
+        .person {
+            position: absolute;
+            right: 10px;
+        }
+    }
+}

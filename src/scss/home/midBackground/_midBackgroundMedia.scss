@@ -1,0 +1,19 @@
+@media only screen and (min-width: 1024px) {
+    .background {
+        min-height: 350px;
+        .left-section {
+            h2 {
+                font-size: 1.5rem !important;
+            }
+            p {
+                font-size: 1.4rem !important;
+            }
+        }
+        .right-section {
+            .list {
+                font-size: 1.4rem !important;
+                padding-top: 40px;
+            }
+        }
+    }
+}

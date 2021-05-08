@@ -1,0 +1,340 @@
+.movie-head, .tv-head {
+font: 1.5rem $primaryFont;
+color: $primaryColor;
+margin: 20px 0;
+opacity: .5;
+}
+.filters {
+    color: $primaryColor;
+    display: flex;
+    list-style: none;
+    font: .8rem $primaryFont;
+    justify-content: center;
+    .list-item {
+        margin: 0 5px;
+        font-size: .7rem;
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 3px;
+            background-image: linear-gradient($primaryColor, $primaryColor),
+            linear-gradient($fifthColor, $fifthColor);
+            background-size: 0 5px, auto;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            transition: all .3s linear;
+        }
+        &:hover {
+            &::after {
+            background-size: 100% 5px, auto;
+            }
+        }
+        &:last-child {
+            width: 15px;
+            transform: rotate(180deg);
+            margin-left: 15px;
+            &::after {
+                display: none;
+            }
+            span {
+                height: 2px;
+                background-color: $primaryColor;
+                display: block;
+                margin: 3px 0;
+                transition: all .3s linear;
+                &:first-child {
+                    width: 5px;
+                }
+                &:nth-child(2) {
+                    width: 10px;
+                }
+                &:last-child {
+                    width: 15px;
+                }
+            }
+        }
+    }
+}
+.drop-down {
+    width: fit-content;
+    position: absolute;
+    left: 70%;
+    color: $fourthColor;
+    font: 700 .6rem $secondaryFont;
+    background-color: $primaryColor;
+    height: unset;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 99;
+    transition: all .5s ease-in-out;
+    .top, .bot, .to-z{
+        border-bottom: 1px solid $fourthColor;
+    }
+}
+.title-movies, .title-tvs {
+    width: fit-content;
+    border-left: 3px solid $primaryColor;
+    padding-left: 5px;
+    color: $secondaryColor;
+    font-family: $primaryFont;
+    filter: brightness(1.7);
+    font-weight: 700 !important;
+}
+
+.col-6 {
+    margin: 15px 0;
+    .img-movie, .img-tv {
+        border-radius: 5px;
+        box-shadow: 0 3px 10px $secondaryColor
+    }
+}
+.layout {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    transform: translateX(-100%);
+    transition: all .8s ease-in-out .8s;
+    opacity: .2;
+    background-color: $secondaryColor;
+    overflow-y: auto;
+    .btn {
+        background-color: $primaryColor;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        color: $secondaryColor;
+        font: 700 1rem $primaryFont;
+        .chevron {
+            transform: rotate(-90deg);
+        }
+    }
+    .movie-details, .tv-details {
+        width: 100%;
+        height: 100%;
+        background: no-repeat center/cover;
+        .movi-info, .tv-info {
+            width: 100%;
+            min-height: 650px;
+            background-color: #4e6981a8;
+            padding-top: 50px;
+            padding-bottom: 30px;
+            .movi-poster, .tv-poster {
+                @extend .img-movie;
+            }
+            .trailer {
+                align-self: center;
+                text-align: center;
+                position: relative;
+                    .play {
+                        font-size: 2.3rem;
+                        color: #cd201f;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;                        
+                        .open-vid, .close-vid {
+                            position: absolute;
+                            margin: 0 auto;
+                            left: 0;
+                            right: 0;
+                            top: -15px;
+                            filter: blur(1px);
+                        }
+                    }
+                    p {
+                        color: $primaryColor;
+                        font: 500 .6rem $primaryFont;
+                        position: absolute;
+                        margin: auto;
+                        left: 0;
+                        right: 0;
+                    }
+            }
+            .video-trailer {
+                width: 100%;
+                transition: all 1s ease-in-out;
+                .btn-close {
+                    width: fit-content;
+                }
+                iframe {
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    border: 1px solid $secondaryColor;
+                }
+            }
+            .movi-genres, .tv-genres {
+                display: flex;
+                list-style-type: none;
+                justify-content: center;
+            .movi-genres-item, .tv-genres-item {
+                font: 500 .7rem $primaryFont;
+                color: $primaryColor;
+                opacity: .9;
+                &:not(:first-child) {
+                    &::before {
+                        display: inline-block;
+                        content: '';
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: $primaryColor;
+                        margin: 0 5px;
+                    }
+                }
+            } 
+            }
+            .movi-title, .tv-title {
+                font: 700 1rem $primaryFont;
+                color: $primaryColor;
+                
+            }
+            .movi-overview, .tv-overview{
+                font: 500 .8rem $secondaryFont;
+                color: $primaryColor;
+                line-height: 1.5;
+            }
+            .movi-status, .movi-votes, .tv-status, .tv-votes{
+                display: inline-block;
+                margin-right: 8px;
+                background-color: #c4e046;
+                color: $secondaryColor;
+                padding: 5px;
+            }
+            .movi-status, .tv-status {
+                font: 600 .8rem $primaryFont;
+                border-radius: 5px;
+                box-shadow: 0 4px 5px currentColor;
+            }
+            .movi-votes, .tv-votes {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 3px solid $secondaryColor;
+                font: 600 .7rem $primaryFont;
+                text-align: center;
+                padding: 6px 0 0 0;
+                vertical-align: bottom;
+            }
+            .movi-tagline, .tv-tagline {
+                width: fit-content;
+                margin: auto;
+                font: 800 .8rem $secondaryFont;
+                letter-spacing: 5px;
+                text-align: center;
+                color: $primaryColor;
+            }
+            .movi-homepage, .tv-homepage {
+                color: $primaryColor;
+                font-weight: 800;
+            }
+            .d-flex {
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 40px;
+            }
+            .profile-actor {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                margin: 0 5px;
+                filter: grayscale(1) drop-shadow(0 4px 5px $fifthColor);
+            }
+            .more {
+                @extend .profile-actor;
+                background-color: $secondaryColor;
+                filter: grayscale(0) drop-shadow(0 4px 5px $fifthColor);
+                color: $primaryColor;
+                font: 600 1rem $secondaryFont;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .seasons {
+                margin-top: 10px;
+                p {
+                    &:first-child {
+                        font: 600 1rem $primaryFont;
+                        color: $primaryColor;
+                        border-left: 3px solid $fourthColor;
+                        padding-left: 5px;   
+                    }
+                }
+                .season-card {
+                    margin-bottom: 8px;
+                    .season-poster {
+                        border-radius: 5px;
+                        box-shadow: 0 3px 10px $secondaryColor;
+                    }
+                    .season-name {
+                        margin: 5px 0;
+                        font: 600 .8rem $primaryFont;
+                        color: $primaryColor;
+                    }
+                    .season-episode-year {
+                        font: 500 .7rem $secondaryFont;
+                        color: $primaryColor;
+                        opacity: .7;
+                        margin-bottom: 0;
+                    }
+                    .episodes {
+                        @extend .season-episode-year;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+.animate-enter-active, .animate-leave-active {
+    transition: all 1s;
+}              
+.animate-enter, .animate-leave-to {
+    opacity: 0;
+    transform: rotateX(90deg);
+}                      
+.animate2-enter-active, .animate-leave-active {
+    transition: all 1s;
+}              
+.animate2-enter, .animate-leave-to {
+    opacity: 0;
+    transform: rotateX(-90deg);
+}                      
+
+
+.showVid {
+    transform: translateY(0);
+    opacity: 1;
+    height: 160px;
+}
+.hideVid {
+    transform: translateY(-50px);
+    opacity: 0;
+    height: 0;
+}
+.showLayout {
+    transform: translateX(0);
+    opacity: 1;
+}
+.showDrop {
+    opacity: 1;
+    height: fit-content;
+    transform: translateY(5px);
+}
+.changeTop {
+    width: 5px !important;
+}
+.changeBot {
+    width: 15px !important;
+}
+.backChangeTop {
+    width: 15px !important;
+}
+.backChangeBot {
+    width: 5px !important;
+}

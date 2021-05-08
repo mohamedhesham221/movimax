@@ -1,0 +1,37 @@
+@import '../scss/variables';
+
+//navbar
+@import '../scss/navbar/nav.scss';
+@import '../scss/navbar/navMedia';
+
+// home
+@import '../scss/home/slidersHome/mainSlider';
+@import '../scss/home/movi&tv/movi-tv';
+@import '../scss/home/midBackground/midBackground';
+@import '../scss/home/midBackground/midBackgroundMedia';
+@import '../scss/home/joinForm/joinForm';
+@import '../scss/home/slidersHome/mainSliderMedia';
+@import '../scss/home/joinForm/joinFormMedia';
+
+//movie / tv
+@import '../scss/moviTv/moviTvBck/moviTvBckVue';
+@import '../scss/moviTv/moviTvViews/moviTv';
+@import '../scss/moviTv/moviTvBck/moviTvBckMedia';
+@import '../scss/moviTv/moviTvViews/moviTvMedia';
+
+//faq
+@import '../scss/faq/faq';
+@import '../scss/faq/faqMedia';
+
+//footer
+@import '../scss/footer/footer';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: $fifthColor !important;
+    overflow-x: hidden;
+}

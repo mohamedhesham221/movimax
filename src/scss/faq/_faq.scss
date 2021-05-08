@@ -1,0 +1,41 @@
+.accordion {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+.accordion-card {
+    width: 100%;
+    margin-bottom: 10px;
+    .accordion-card-head {
+        background-color: $secondaryColor;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+        cursor: pointer;
+        .question {
+            color: $primaryColor;
+            font: 400 .7rem $primaryFont;  
+        }
+        .arrow {
+            color: $primaryColor;
+            transition: all .5s ease-in-out;
+        }
+    }
+    .accordion-card-body {
+        background-color: $primaryColor;
+        border-radius: 0 0 5px 5px;
+        color: $secondaryColor;
+        height: 0;
+        overflow-y: hidden;
+        transition: all .5s ease-in-out;
+        .answer {
+            font: 800 .7rem $secondaryFont;
+        }
+    }
+}
+}
+.showAnswer {
+    height: 80px !important;
+    padding: 5px;
+}
+.rotateArrow {
+    transform: rotateX(-180deg);
+}

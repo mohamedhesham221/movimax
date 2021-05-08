@@ -1,0 +1,29 @@
+@media only screen and (min-width: 768px) {
+    .carousel-caption {
+        h3 {
+            display: inline-block;
+            margin-left: 20px;
+            &::after {
+                display: none;
+            }
+        }
+        .poster-carousel {
+            width: 200px;
+            height: auto;
+            margin-bottom: 18px;
+            box-shadow: 0 3px 10px #0f3556;
+            border-radius: 7px;
+            display: inline-block;
+        }
+        .release, .imdb {
+            float: none;
+            display: inline-block;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .carousel-caption {
+        padding-bottom: 60px !important;
+    }
+}

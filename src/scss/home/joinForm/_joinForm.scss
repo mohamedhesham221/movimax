@@ -1,0 +1,45 @@
+.layout-form {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    background-color: $secondaryColor;
+    .logo-form {
+        img {
+            width: 100px;
+            filter: drop-shadow(2px 4px 6px $fifthColor) opacity(0.5);
+        }
+        h2 {
+            font: 600 2rem $primaryFont;
+            color: $primaryColor;
+        }
+    }
+    label {
+        color: $primaryColor;
+        opacity: .6;
+        font-family: $primaryFont;
+    }
+    #male, #female {
+        margin-left: 10px;
+    }
+    label[for="male"],  label[for="female"] {
+        margin-left: 3px;
+        opacity: 1;
+    }
+    button[type=submit] {
+        color: $secondaryColor;
+        background-color: $primaryColor;
+        font: 600 1rem $primaryFont;
+    }
+}
+.opacity-enter-active {
+    transition: opacity .5s ease-in-out .5s;
+}
+.opacity-leave-active {
+    transition: opacity 1.5s ease-in-out 2s;
+}
+.opacity-enter, .opacity-leave-to {
+    opacity: 0;
+}

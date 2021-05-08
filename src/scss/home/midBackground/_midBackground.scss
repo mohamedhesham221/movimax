@@ -1,0 +1,52 @@
+.background {
+    width: 100%;
+    min-height: 200px;
+    padding-top: 30px;
+    background: fixed no-repeat top/cover url('../assets/avengers.png');
+    color: $primaryColor;
+    .loading {
+        width: 0;
+        height: 5px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+    }
+    .left-section {
+        h2 {
+            font: 600 1rem $primaryFont;
+        }
+        p {
+            font: .9rem $secondaryFont;
+        }
+        .btn {
+            width: 100px;
+            height: 30px;
+            background-color: $thirdColor;
+            font-family: $secondaryFont;
+            color: $primaryColor;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+    }
+    .right-section {
+        .list {
+            list-style-position: inside;
+            font-size: .9rem;
+        }
+    }
+    }  
+
+    .activeLoading {
+        background-color: $primaryColor;
+        animation: load 5s ease-out infinite;
+    }
+    @keyframes load {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+    

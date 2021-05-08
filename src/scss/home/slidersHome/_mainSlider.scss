@@ -1,0 +1,63 @@
+.carousel-caption {
+    width: 100%;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important; 
+    border: none;
+    padding-top: 0 !important;
+    padding-bottom: 35px !important;
+    box-shadow: 0 0 50px 50px $secondaryOpacity;
+    background-color: $secondaryOpacity;
+    h3{
+        font-family: $primaryFont;
+        margin-bottom: 20px;
+        &::after {
+            display: block;
+            content: "";
+            width: 100px;
+            height: 3px;
+            border-bottom-right-radius: 50px;
+            background: linear-gradient(to right, $secondaryOpacity 60px, $thirdColor);
+            margin: auto;
+        }
+    }
+    .imdb, .release {
+        float: left;
+        margin-left: 10px;
+        font-family: $primaryFont;
+        margin-bottom: 0;
+        &:not(.release) {
+            color: #c4e046;
+        }
+        &:not(.imdb) {
+            font-size: .8rem;
+        }
+        b {
+            color: $primaryColor;  
+        }
+    }
+}
+.carousel-indicators {
+    margin: 0 !important;
+    li {
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50%;
+        opacity: .3 !important;
+        outline: none;
+    }
+    .active {
+        background-color: $thirdColor !important;
+        opacity: 1 !important;
+        outline: none;
+    }
+}
+.carousel-control-prev, .carousel-control-next {
+    display: none !important;
+}
+.carousel-item {
+    .img-fluid {
+        height: 545px;
+    }
+    
+}

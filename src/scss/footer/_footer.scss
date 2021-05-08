@@ -1,0 +1,26 @@
+footer {
+    .img-fluid {
+        filter: brightness(.5) opacity(.5);
+    }
+    .social {
+        $list: (facebook, $primaryColor, #3b5999)
+                ,(instagram, $primaryColor, #e4405f)
+                ,(twitter, $primaryColor, #55acee);
+        @each $social,$color,$hover in $list {
+            .#{$social} {
+                color: $color;
+                margin: 0 10px;
+                transition: all .3s linear;
+                &:hover {
+                    color: $hover;
+                }
+            }
+        }
+    }
+    .copyright {
+        p {
+            font: .7rem $primaryFont;
+            color: $primaryColor;    
+        }
+    }
+}

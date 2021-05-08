@@ -1,0 +1,49 @@
+@media only screen and (min-width: 768px) {
+    .showVid {
+        height: 260px;
+    }
+    %fontSize {
+        font-size: 1rem !important;
+    }
+    .movi-genres-item,
+    .movi-overview,
+    .movi-votes,
+    .movi-status,
+    .tv-genres-item,
+    .tv-overview,
+    .tv-votes,
+    .tv-status,
+    .trailer p {
+        @extend %fontSize;
+    }
+    .movi-votes, .tv-votes {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .movi-tagline, .tv-tagline {
+        font-size: 1.3rem !important;
+        letter-spacing: 10px !important;
+    }
+    .profile-actor {
+        width: 60px !important;
+        height: 60px !important;
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .showVid {
+        height: 460px;
+    }
+    .img-movie, .img-tv {
+        transition: all .3s linear;
+        cursor: pointer;
+        &:hover {
+            opacity: .6;
+        }
+    }
+    .filters {
+        .list-item {
+            margin: 0 25px;
+        }
+    }
+}

@@ -1,10 +1,21 @@
-# unicorn-films
+# movimax
 
 ## Project setup
 ```
 npm install
 ```
 
+### Screenshot
+
+![](./src/assets/logo.png)
+
+### Links
+
+- Live preview : ()
+
+### Built with
+
+- Vue.js
 ### Compiles and hot-reloads for development
 ```
 npm run serve
@@ -22,3 +33,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Author
+
+- Website - [Mohamed Hesham]
