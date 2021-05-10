@@ -9,8 +9,8 @@
         <p class="lead">Get access to maintain your own custom personal lists,track
           what you've seen and search and filter for what to watch next—regardless
             if it's in theatres,
-          on TV or available on popular streaming services like .</p>
-          <button class="btn" @click="formChanged" >Join&nbsp;Now</button>
+          on TV or available on popular streaming services like.</p>
+          <button class="btn" @click="formChanged" >Join Now</button>
       </div>
         </div>
         <div class="col-sm-12 col-lg-6">
