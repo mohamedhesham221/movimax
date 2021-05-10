@@ -1,3 +1,9 @@
+.carousel-inner {
+    height: 100vh;
+}
+.carousel-item img:not(.poster-carousel) {
+    height: 100vh !important;
+}
 .carousel-caption {
     width: 100%;
     right: 0 !important;

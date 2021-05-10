@@ -58,7 +58,7 @@
                 <div class="video-trailer" :class="{showVid:trailer,hideVid:!trailer}">
                 <iframe
                 :src="youtubeUrl + prop.videos.results[0].key +
-                '?&amp;controls=1&amp;showinfo=0&amp;&amp;mute=' + muteNum" allowfullscreen
+                '?&amp;controls=1&amp;showinfo=0&amp;mute=' + muteNum" allowfullscreen
                   loading="lazy">
                 </iframe>
               </div>

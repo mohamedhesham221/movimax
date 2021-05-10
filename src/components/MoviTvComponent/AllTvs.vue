@@ -57,8 +57,8 @@
                 <div class="video-trailer" :class="{showVid:trailer,hideVid:!trailer}">
                 <iframe
                 :src="youtubeUrl + prop.videos.results[0].key +
-                '?&amp;controls=1&amp;showinfo=0&amp;&amp;mute=' + muteNum" allowfullscreen
-                  loading="lazy">
+                '?controls=1&amp;showinfo=0&amp;mute=' + muteNum"
+                allowfullscreen loading="lazy">
                 </iframe>
               </div>
                   <p class="lead tv-title" v-text="prop.name"></p>
@@ -85,8 +85,8 @@
                       <img class="img-fluid season-poster" :src="baseUrl + season.poster_path"
                       :alt="season.name" loading="lazy" />
                       <p class="lead season-name" v-text="season.name"></p>
-                      <p class="lead season-episode-year">
-                        {{ season.air_date | year}}
+                      <p class="lead season-episode-year" v-if="season.air_date">
+                        {{ season.air_date | year }}
                       </p>
                         <span class="episodes">{{ season.episode_count }} episode</span>
                     </div>
@@ -212,7 +212,7 @@ export default {
           }
         }).then((result) => {
           this.tvData.push(result);
-          console.log(this.tvData);
+          // console.log(this.tvData);
         })
         .catch((error) => {
           console.log(error);
