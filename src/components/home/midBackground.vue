@@ -16,11 +16,11 @@
         <div class="col-sm-12 col-lg-6">
           <div class="right-section">
         <ul class="list">
-          <li class="item-list">Enjoy ad free</li>
-          <li class="item-list">Maintain a personal watchlist</li>
-          <li class="item-list">Log the movies and TV shows you've seen</li>
+          <li class="item-list">Enjoy ad free.</li>
+          <li class="item-list">Maintain a personal watchlist.</li>
+          <li class="item-list">Log the movies and TV shows you've seen.</li>
           <li class="item-list">
-            Filter by your subscribed streaming services and find something to watch</li>
+            Filter by your subscribed streaming services and find something to watch.</li>
         </ul>
       </div>
         </div>
