@@ -14,7 +14,8 @@
           <div class="col-6 col-md-3" v-for="movie in topRatedArr" :key="movie.id">
             <div class="movie__item">
               <span class="rate">{{ movie[13].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + movie[13].poster_path" :alt="movie[13].title">
+              <img class="img-fluid" :src="baseUrl + movie[13].poster_path"
+                  :alt="movie[13].title" loading="lazy">
               <div class="caption">
                       <div class="marque">
                         <p v-for="id in movie[13].genre_ids" :key="id.id" class="genres_genre">
@@ -29,7 +30,8 @@
           <div class="col-6 col-md-3" v-for="movie in topRatedArr" :key="movie.id">
             <div class="movie__item">
                 <span class="rate">{{ movie[1].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + movie[1].poster_path" :alt="movie[1].title">
+              <img class="img-fluid" :src="baseUrl + movie[1].poster_path"
+                :alt="movie[1].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
                     <p v-for="id in movie[1].genre_ids" :key="id.id" class="genres_genre">
@@ -44,7 +46,8 @@
           <div class="col-6 col-md-3" v-for="movie in topRatedArr" :key="movie.id">
             <div class="movie__item">
                 <span class="rate">{{ movie[12].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + movie[12].poster_path" :alt="movie[12].title">
+              <img class="img-fluid" :src="baseUrl + movie[12].poster_path"
+                :alt="movie[12].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
                       <p v-for="id in movie[12].genre_ids" :key="id.id" class="genres_genre">
@@ -59,7 +62,8 @@
           <div class="col-6 col-md-3" v-for="movie in topRatedArr" :key="movie.id">
             <div class="movie__item">
                 <span class="rate">{{ movie[3].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + movie[3].poster_path" :alt="movie[3].title">
+              <img class="img-fluid" :src="baseUrl + movie[3].poster_path"
+                :alt="movie[3].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
                     <p v-for="id in movie[3].genre_ids" :key="id.id" class="genres_genre">

@@ -14,7 +14,8 @@
           <div class="col-6 col-md-3" v-for="tv in airingArr" :key="tv.id">
             <div class="tv__item">
               <span class="rate">{{ tv[13].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + tv[13].poster_path" :alt="tv[13].title">
+              <img class="img-fluid" :src="baseUrl + tv[13].poster_path"
+                :alt="tv[13].title" loading="lazy">
               <div class="caption">
                       <div class="marque">
                         <p v-for="id in tv[13].genre_ids" :key="id.id" class="genres_genre">
@@ -29,7 +30,8 @@
           <div class="col-6 col-md-3" v-for="tv in airingArr" :key="tv.id">
             <div class="tv__item">
                 <span class="rate">{{ tv[1].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + tv[1].poster_path" :alt="tv[1].title">
+              <img class="img-fluid" :src="baseUrl + tv[1].poster_path"
+                :alt="tv[1].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
                     <p v-for="id in tv[1].genre_ids" :key="id.id" class="genres_genre">
@@ -44,7 +46,8 @@
           <div class="col-6 col-md-3" v-for="tv in airingArr" :key="tv.id">
             <div class="tv__item">
                 <span class="rate">{{ tv[10].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + tv[10].poster_path" :alt="tv[10].title">
+              <img class="img-fluid" :src="baseUrl + tv[10].poster_path"
+                :alt="tv[10].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
                       <p v-for="id in tv[10].genre_ids" :key="id.id" class="genres_genre">
@@ -59,7 +62,8 @@
           <div class="col-6 col-md-3" v-for="tv in airingArr" :key="tv.id">
             <div class="tv__item">
                 <span class="rate">{{ tv[19].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + tv[19].poster_path" :alt="tv[19].title">
+              <img class="img-fluid" :src="baseUrl + tv[19].poster_path"
+                :alt="tv[19].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
                     <p v-for="id in tv[19].genre_ids" :key="id.id" class="genres_genre">

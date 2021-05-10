@@ -23,7 +23,7 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-6 col-md-4 col-lg-2" v-for="tv in tvs[0][0]" :key="tv.id">
           <img class="img-fluid img-tv" :src="baseUrl + tv.poster_path" :alt="tv.name"
-          @click="showTv = true; idTv = tv.id; tvDetail();">
+          @click="showTv = true; idTv = tv.id; tvDetail();" loading="lazy">
         </div>
       </div>
             <div class="layout" :class="{showLayout:showTv}">
@@ -35,7 +35,7 @@
             <div class="row">
             <div class="col-6 col-lg-4">
               <img class="img-fluid tv-poster"
-              :src= "baseUrl + prop.poster_path" :alt="prop.title">
+              :src= "baseUrl + prop.poster_path" :alt="prop.title" loading="lazy">
             </div>
             <div class="col-6 trailer">
                 <button class="play" @click="trailer = !trailer">
@@ -57,7 +57,8 @@
                 <div class="video-trailer" :class="{showVid:trailer,hideVid:!trailer}">
                 <iframe
                 :src="youtubeUrl + prop.videos.results[0].key +
-                '?&amp;controls=1&amp;showinfo=0&amp;&amp;mute=' + muteNum" allowfullscreen>
+                '?&amp;controls=1&amp;showinfo=0&amp;&amp;mute=' + muteNum" allowfullscreen
+                  loading="lazy">
                 </iframe>
               </div>
                   <p class="lead tv-title" v-text="prop.name"></p>
@@ -82,7 +83,7 @@
                       v-for="season in prop.seasons"
                     :key="season.id">
                       <img class="img-fluid season-poster" :src="baseUrl + season.poster_path"
-                      :alt="season.name"/>
+                      :alt="season.name" loading="lazy" />
                       <p class="lead season-name" v-text="season.name"></p>
                       <p class="lead season-episode-year">
                         {{ season.air_date | year}}

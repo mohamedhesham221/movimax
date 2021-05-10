@@ -75,7 +75,8 @@
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[0].backdrop_path"
       >
-      <img class="img-fluid poster-carousel" :src="baseUrl + popular[0].poster_path" />
+      <img class="img-fluid poster-carousel"
+        :src="baseUrl + popular[0].poster_path" loading="lazy"/>
       <h3>{{ popular[0].title | shortTitle }}</h3>
       <p class="release">2021</p>
       <div class="clearfix"></div>
@@ -86,7 +87,8 @@
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[1].backdrop_path"
       >
-      <img class="img-fluid poster-carousel" :src="baseUrl + popular[1].poster_path" />
+      <img class="img-fluid poster-carousel"
+        :src="baseUrl + popular[1].poster_path" loading="lazy" />
       <h3>{{ popular[1].title | shortTitle }}</h3>
       <p class="release">2021</p>
       <div class="clearfix"></div>
@@ -97,7 +99,8 @@
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[2].backdrop_path"
       >
-      <img class="img-fluid poster-carousel" :src="baseUrl + popular[2].poster_path" />
+      <img class="img-fluid poster-carousel"
+        :src="baseUrl + popular[2].poster_path" loading="lazy" />
       <h3>{{ popular[2].title | shortTitle }}</h3>
       <p class="release">2021</p>
       <div class="clearfix"></div>
@@ -108,7 +111,8 @@
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[3].backdrop_path"
       >
-      <img class="img-fluid poster-carousel" :src="baseUrl + popular[3].poster_path" />
+      <img class="img-fluid poster-carousel"
+        :src="baseUrl + popular[3].poster_path" loading="lazy" />
       <h3>{{ popular[3].title | shortTitle }}</h3>
       <p class="release">2021</p>
       <div class="clearfix"></div>
@@ -119,7 +123,8 @@
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[4].backdrop_path"
       >
-      <img class="img-fluid poster-carousel" :src="baseUrl + popular[4].poster_path" />
+      <img class="img-fluid poster-carousel"
+        :src="baseUrl + popular[4].poster_path" loading="lazy" />
       <h3>{{ popular[4].title | shortTitle }}</h3>
       <p class="release">2021</p>
       <div class="clearfix"></div>
@@ -130,7 +135,8 @@
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[5].backdrop_path"
       >
-      <img class="img-fluid poster-carousel" :src="baseUrl + popular[5].poster_path" />
+      <img class="img-fluid poster-carousel"
+        :src="baseUrl + popular[5].poster_path"  loading="lazy" />
       <h3>{{ popular[5].title | shortTitle }}</h3>
       <p class="release">2021</p>
       <div class="clearfix"></div>
