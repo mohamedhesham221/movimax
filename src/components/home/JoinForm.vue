@@ -3,7 +3,7 @@
       <div class="container">
     <div class="logo-form text-center">
       <img class="img-fluid" src="../../assets/logo.png" alt="logo">
-      <h2 class="h1">Join Now</h2>
+      <h2 class="h1">Join Now !!</h2>
     </div>
     <form class="form">
       <div class="form-group">
