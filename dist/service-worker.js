@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9ef05fc146fd08810830b096c1d321dc.js"
+  "/precache-manifest.87fb91b8f313f97fed6d25ba6ffa694d.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "movimax"});
