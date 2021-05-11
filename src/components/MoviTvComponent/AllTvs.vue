@@ -55,11 +55,13 @@
                 </li>
                 </ul>
                 <div class="video-trailer" :class="{showVid:trailer,hideVid:!trailer}">
-                <iframe
-                :src="youtubeUrl + prop.videos.results[0].key +
-                '?controls=1&amp;showinfo=0&amp;mute=' + muteNum"
-                allowfullscreen loading="lazy">
-                </iframe>
+                  <iframe
+                    v-if="prop.videos.results[0]"
+                    :src="youtubeUrl + prop.videos.results[0].key +
+                    '?controls=1&amp;showinfo=0&amp;mute=' + muteNum"
+                      allowfullscreen loading="lazy">
+                  </iframe>
+                  <iframe src="https://www.youtube.com" v-else></iframe>
               </div>
                   <p class="lead tv-title" v-text="prop.name"></p>
                 <p class="lead tv-status" v-text="prop.status"></p>

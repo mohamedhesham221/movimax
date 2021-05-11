@@ -1,5 +1,10 @@
 @media only screen and (min-width: 768px) {
     .carousel-caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: unset;
+        padding-top: 200px !important;
         h3 {
             display: inline-block;
             margin-left: 20px;
@@ -15,9 +20,12 @@
             border-radius: 7px;
             display: inline-block;
         }
-        .release, .imdb {
+        .release {
             float: none;
             display: inline-block;
+        }
+        .slider-overview {
+            font-family: $primaryFont;
         }
     }
 }

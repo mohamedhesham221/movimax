@@ -76,72 +76,60 @@
         :img-src="baseUrl + popular[0].backdrop_path"
       >
       <img class="img-fluid poster-carousel"
-        :src="baseUrl + popular[0].poster_path" loading="lazy"/>
+        :src="baseUrl + popular[0].poster_path" />
       <h3>{{ popular[0].title | shortTitle }}</h3>
       <p class="release">2021</p>
-      <div class="clearfix"></div>
-      <p class="imdb d-block d-md-none"><b>imdb</b>&nbsp;
-      <b-icon-star-fill />&nbsp;{{ popular[0].vote_average }}</p>
+      <p class="lead slider-overview">{{ popular[0].overview | shortOverview }}</p>
       </b-carousel-slide>
 
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[1].backdrop_path"
       >
       <img class="img-fluid poster-carousel"
-        :src="baseUrl + popular[1].poster_path" loading="lazy" />
+        :src="baseUrl + popular[1].poster_path" />
       <h3>{{ popular[1].title | shortTitle }}</h3>
       <p class="release">2021</p>
-      <div class="clearfix"></div>
-      <p class="imdb d-block d-md-none"><b>imdb</b>&nbsp;
-      <b-icon-star-fill />&nbsp;{{ popular[1].vote_average }}</p>
+      <p class="lead slider-overview">{{ popular[1].overview | shortOverview }}</p>
       </b-carousel-slide>
 
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[2].backdrop_path"
       >
       <img class="img-fluid poster-carousel"
-        :src="baseUrl + popular[2].poster_path" loading="lazy" />
+        :src="baseUrl + popular[2].poster_path"  />
       <h3>{{ popular[2].title | shortTitle }}</h3>
       <p class="release">2021</p>
-      <div class="clearfix"></div>
-      <p class="imdb d-block d-md-none"><b>imdb</b>&nbsp;
-      <b-icon-star-fill />&nbsp;{{ popular[2].vote_average }}</p>
+      <p class="lead slider-overview">{{ popular[2].overview | shortOverview }}</p>
       </b-carousel-slide>
 
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[3].backdrop_path"
       >
       <img class="img-fluid poster-carousel"
-        :src="baseUrl + popular[3].poster_path" loading="lazy" />
+        :src="baseUrl + popular[3].poster_path"  />
       <h3>{{ popular[3].title | shortTitle }}</h3>
       <p class="release">2021</p>
-      <div class="clearfix"></div>
-      <p class="imdb d-block d-md-none"><b>imdb</b>&nbsp;
-      <b-icon-star-fill />&nbsp;{{ popular[3].vote_average }}</p>
+      <p class="lead slider-overview">{{ popular[3].overview | shortOverview }}</p>
       </b-carousel-slide>
 
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[4].backdrop_path"
       >
       <img class="img-fluid poster-carousel"
-        :src="baseUrl + popular[4].poster_path" loading="lazy" />
+        :src="baseUrl + popular[4].poster_path"  />
       <h3>{{ popular[4].title | shortTitle }}</h3>
       <p class="release">2021</p>
-      <div class="clearfix"></div>
-      <p class="imdb d-block d-md-none"><b>imdb</b>&nbsp;
-      <b-icon-star-fill />&nbsp;{{ popular[4].vote_average }}</p>
+      <p class="lead slider-overview">{{ popular[4].overview | shortOverview }}</p>
       </b-carousel-slide>
 
       <b-carousel-slide v-for="popular in popularArr" :key="popular.id"
         :img-src="baseUrl + popular[5].backdrop_path"
       >
       <img class="img-fluid poster-carousel"
-        :src="baseUrl + popular[5].poster_path"  loading="lazy" />
+        :src="baseUrl + popular[5].poster_path"  />
       <h3>{{ popular[5].title | shortTitle }}</h3>
       <p class="release">2021</p>
-      <div class="clearfix"></div>
-      <p class="imdb d-block d-md-none"><b>imdb</b>&nbsp;
-      <b-icon-star-fill />&nbsp;{{ popular[5].vote_average }}</p>
+      <p class="lead slider-overview">{{ popular[5].overview | shortOverview }}</p>
       </b-carousel-slide>
         </b-carousel>
   </div>
@@ -166,7 +154,10 @@ export default {
   filters: {
     // eslint-disable-next-line consistent-return
     shortTitle(val) {
-      return `${val.substring(0, 20)} ..`;
+      return `${val.substring(0, 30)} ..`;
+    },
+    shortOverview(val) {
+      return `"${val.substring(0, 100)}. . . ."`;
     },
   },
   mixins: [popularMixin],

@@ -190,7 +190,7 @@ export default {
           }
         }).then((result) => {
           this.movieData.push(result);
-          console.log(this.movieData);
+          // console.log(this.movieData);
         })
         .catch((error) => {
           console.log(error);

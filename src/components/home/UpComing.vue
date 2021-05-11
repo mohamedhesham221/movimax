@@ -13,12 +13,12 @@
         <div class="row">
           <div class="col-6 col-md-3" v-for="movie in upComingArr" :key="movie.id">
             <div class="movie__item">
-              <span class="rate">{{ movie[10].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + movie[10].poster_path"
-                :alt="movie[10].title" loading="lazy">
+              <span class="rate">{{ movie[0].vote_average }}</span>
+              <img class="img-fluid" :src="baseUrl + movie[0].poster_path"
+                :alt="movie[0].title" loading="lazy">
               <div class="caption">
                 <div class="marque">
-                  <p v-for="id in movie[10].genre_ids" :key="id.id" class="genres_genre">
+                  <p v-for="id in movie[0].genre_ids" :key="id.id" class="genres_genre">
                   <span v-for="(name, index) in genres[0]" :key="index">
                     <span v-if="id == name.id">{{ name.name }}</span>
                   </span>
@@ -29,12 +29,12 @@
           </div>
           <div class="col-6 col-md-3" v-for="movie in upComingArr" :key="movie.id">
             <div class="movie__item">
-                <span class="rate">{{ movie[13].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + movie[13].poster_path"
-                :alt="movie[13].title" loading="lazy">
+                <span class="rate">{{ movie[1].vote_average }}</span>
+              <img class="img-fluid" :src="baseUrl + movie[1].poster_path"
+                :alt="movie[1].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
-                    <p v-for="id in movie[13].genre_ids" :key="id.id" class="genres_genre">
+                    <p v-for="id in movie[1].genre_ids" :key="id.id" class="genres_genre">
                   <span v-for="(name, index) in genres[0]" :key="index">
                     <span v-if="id == name.id">{{ name.name }}</span>
                   </span>
@@ -45,12 +45,12 @@
           </div>
           <div class="col-6 col-md-3" v-for="movie in upComingArr" :key="movie.id">
             <div class="movie__item">
-                <span class="rate">{{ movie[18].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + movie[18].poster_path"
-                :alt="movie[18].title" loading="lazy">
+                <span class="rate">{{ movie[2].vote_average }}</span>
+              <img class="img-fluid" :src="baseUrl + movie[2].poster_path"
+                :alt="movie[2].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
-                    <p v-for="id in movie[18].genre_ids" :key="id.id" class="genres_genre">
+                    <p v-for="id in movie[2].genre_ids" :key="id.id" class="genres_genre">
                   <span v-for="(name, index) in genres[0]" :key="index">
                     <span v-if="id == name.id">{{ name.name }}</span>
                   </span>
@@ -61,12 +61,12 @@
           </div>
           <div class="col-6 col-md-3" v-for="movie in upComingArr" :key="movie.id">
             <div class="movie__item">
-                <span class="rate">{{ movie[16].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + movie[16].poster_path"
-                :alt="movie[16].title" loading="lazy">
+                <span class="rate">{{ movie[3].vote_average }}</span>
+              <img class="img-fluid" :src="baseUrl + movie[3].poster_path"
+                :alt="movie[3].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
-                      <p v-for="id in movie[16].genre_ids" :key="id.id" class="genres_genre">
+                      <p v-for="id in movie[3].genre_ids" :key="id.id" class="genres_genre">
                   <span v-for="(name, index) in genres[0]" :key="index">
                     <span v-if="id == name.id">{{ name.name }}</span>
                   </span>

@@ -99,8 +99,8 @@ opacity: .5;
     left: 0;
     z-index: 9999;
     transform: translateX(-100%);
-    transition: all .8s ease-in-out .8s;
-    opacity: .2;
+    transition: all .5s ease-in-out;
+    opacity: 0;
     background-color: $secondaryColor;
     overflow-y: auto;
     .btn {

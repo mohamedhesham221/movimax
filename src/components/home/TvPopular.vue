@@ -45,12 +45,12 @@
           </div>
           <div class="col-6 col-md-3" v-for="tv in popularArr" :key="tv.id">
             <div class="tv__item">
-                <span class="rate">{{ tv[9].vote_average }}</span>
-              <img class="img-fluid" :src="baseUrl + tv[9].poster_path"
-                :alt="tv[9].title" loading="lazy">
+                <span class="rate">{{ tv[2].vote_average }}</span>
+              <img class="img-fluid" :src="baseUrl + tv[2].poster_path"
+                :alt="tv[2].title" loading="lazy">
                 <div class="caption">
                   <div class="marque">
-                    <p v-for="id in tv[9].genre_ids" :key="id.id" class="genres_genre">
+                    <p v-for="id in tv[2].genre_ids" :key="id.id" class="genres_genre">
                   <span v-for="(name, index) in genres[0]" :key="index">
                     <span v-if="id == name.id">{{ name.name }}</span>
                   </span>

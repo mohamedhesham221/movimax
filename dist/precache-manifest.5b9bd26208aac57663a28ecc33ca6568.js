@@ -4,8 +4,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/_redirects"
   },
   {
-    "revision": "49e3111ff0fa95023e1d",
-    "url": "/css/app.fcd23fb6.css"
+    "revision": "4b06d51bb0ec8709a8ee",
+    "url": "/css/app.7cfabeea.css"
   },
   {
     "revision": "22971679b5f221d2faeb",
@@ -14,10 +14,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4288a3bd3a85c4f9f314",
     "url": "/css/chunk-vendors.55204a1e.css"
-  },
-  {
-    "revision": "2909d547ec91c7cb12614a902a71d57e",
-    "url": "/img/avengers.2909d547.png"
   },
   {
     "revision": "20e4ade25a47ad70e41e8866222dfc57",
@@ -32,16 +28,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/not-found.37267f47.jpg"
   },
   {
-    "revision": "d81e780492125a5c7974f1cc3056bcdb",
+    "revision": "22eab9f42e35d4398523b45234cc75f7",
+    "url": "/img/seats.22eab9f4.jpg"
+  },
+  {
+    "revision": "895b2c81143ca88dbd11cd6635a625a9",
     "url": "/index.html"
   },
   {
-    "revision": "49e3111ff0fa95023e1d",
-    "url": "/js/app.e0754885.js"
+    "revision": "4b06d51bb0ec8709a8ee",
+    "url": "/js/app.a4995c6e.js"
   },
   {
-    "revision": "305ec2be09e3d8e67b56",
-    "url": "/js/chunk-30748a2d.9353dbe6.js"
+    "revision": "843659aa17aa73fe3b3e",
+    "url": "/js/chunk-30748a2d.ea6a5fe4.js"
   },
   {
     "revision": "223de2b28dda8d75be9f",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-7424f8cb.174f58a2.js"
   },
   {
-    "revision": "782ef557173c50eca19a",
-    "url": "/js/chunk-be1bf3d8.04cd2348.js"
+    "revision": "b073d8be2c46ce79bb95",
+    "url": "/js/chunk-be1bf3d8.4e68e4c0.js"
   },
   {
     "revision": "4288a3bd3a85c4f9f314",
