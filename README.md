@@ -11,7 +11,7 @@ npm install
 
 ### Links
 
-- Live preview : ()
+- Live preview : (https://movimax-2021.netlify.app/)
 
 ### Built with
 
