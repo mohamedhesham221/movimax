@@ -70,12 +70,17 @@ opacity: .5;
     opacity: 0;
     z-index: 99;
     transition: all .5s ease-in-out;
-    .top, .bot, .to-z, .to-a{
-        border-bottom: 1px solid $fourthColor;
+    .top, .bot, .to-z{
+            transition: all .5s ease-in-out;
+            border-bottom: 1px solid $fourthColor;
         &:hover {
             background-color: $secondaryColor;
             color: $primaryColor;
         }
+    }
+    .to-a {
+        @extend .to-z;
+        border-bottom: none;
     }
 }
 .title-movies, .title-tvs {
