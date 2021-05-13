@@ -9,7 +9,7 @@
       <div class="form-group">
           <label for="username">username</label>
           <input type="text" class="form-control" id="username"
-          placeholder="type a username" v-model="username"/>
+          placeholder="type a username" v-model="username" maxlength="15"/>
       </div>
       <div class="form-group">
           <label>your gender</label><br>
