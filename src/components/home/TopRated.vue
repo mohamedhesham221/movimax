@@ -15,7 +15,7 @@
             <div class="movie__item">
               <span class="rate">{{ movie[0].vote_average }}</span>
               <img class="img-fluid" :src="baseUrl + movie[0].poster_path"
-                  :alt="movie[0].title" loading="lazy">
+                  :alt="movie[0].title" >
               <div class="caption">
                       <div class="marque">
                         <p v-for="id in movie[0].genre_ids" :key="id.id" class="genres_genre">
@@ -31,7 +31,7 @@
             <div class="movie__item">
                 <span class="rate">{{ movie[1].vote_average }}</span>
               <img class="img-fluid" :src="baseUrl + movie[1].poster_path"
-                :alt="movie[1].title" loading="lazy">
+                :alt="movie[1].title" >
                 <div class="caption">
                   <div class="marque">
                     <p v-for="id in movie[1].genre_ids" :key="id.id" class="genres_genre">
@@ -47,7 +47,7 @@
             <div class="movie__item">
                 <span class="rate">{{ movie[2].vote_average }}</span>
               <img class="img-fluid" :src="baseUrl + movie[2].poster_path"
-                :alt="movie[12].title" loading="lazy">
+                :alt="movie[12].title" >
                 <div class="caption">
                   <div class="marque">
                       <p v-for="id in movie[2].genre_ids" :key="id.id" class="genres_genre">
@@ -63,7 +63,7 @@
             <div class="movie__item">
                 <span class="rate">{{ movie[3].vote_average }}</span>
               <img class="img-fluid" :src="baseUrl + movie[3].poster_path"
-                :alt="movie[3].title" loading="lazy">
+                :alt="movie[3].title" >
                 <div class="caption">
                   <div class="marque">
                     <p v-for="id in movie[3].genre_ids" :key="id.id" class="genres_genre">

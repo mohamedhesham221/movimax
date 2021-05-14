@@ -23,7 +23,7 @@
       <div class="row justify-content-center align-items-center">
         <div class="col-6 col-md-4 col-lg-2" v-for="movie in movies[0][0]" :key="movie.id">
           <img class="img-fluid img-movie" :src="baseUrl + movie.poster_path" :alt="movie.title"
-          @click="showMovi = true; idMovi = movie.id; moviDetail();" loading="lazy">
+          @click="showMovi = true; idMovi = movie.id; moviDetail();" >
         </div>
       </div>
       <div class="layout" :class="{showLayout:showMovi}">
@@ -35,7 +35,7 @@
             <div class="row">
             <div class="col-6 col-lg-4">
               <img class="img-fluid movi-poster"
-              :src= "baseUrl + prop.poster_path" :alt="prop.title" loading="lazy">
+              :src= "baseUrl + prop.poster_path" :alt="prop.title" >
             </div>
             <div class="col-6 trailer">
                 <button class="play" @click="trailer = !trailer">
@@ -58,8 +58,8 @@
                 <div class="video-trailer" :class="{showVid:trailer,hideVid:!trailer}">
                 <iframe
                 :src="youtubeUrl + prop.videos.results[0].key +
-                '?&amp;controls=1&amp;showinfo=0&amp;mute=' + muteNum" allowfullscreen
-                  loading="lazy">
+                '?&amp;controls=1&amp;showinfo=0&amp;mute=' + muteNum"
+                allowfullscreen loading="lazy">
                 </iframe>
               </div>
                   <p class="lead movi-title" v-text="prop.title"></p>
